@@ -4,6 +4,7 @@ import { Box, Paper, Typography } from "@mui/material";
 import { useState } from "react";
 import { RecordContextProvider } from "react-admin";
 import { fromWei, toBN } from "web3-utils";
+import { SAFE_APP } from "../constants/constants";
 import logo from "./logo.png";
 
 function stringToColor(string: string) {
@@ -48,7 +49,8 @@ const ComTile = (props: any) => {
         href={
           "https://gnosis-safe.io/app/rin:" +
           props.data.safeAddress +
-          "/apps?appUrl=http://localhost:3006/"
+          "/apps?appUrl=" +
+          SAFE_APP
         }
         style={{ textDecoration: "none" }}
       >

@@ -2,6 +2,7 @@ import { BUDGETMODIFIER_ABI } from "./ABIs/BUDGETMODIFIER_ABI";
 import { FACTORY_ABI } from "./ABIs/FACTORY_ABI";
 import { PERMISSIONREG_ABI } from "./ABIs/PERMISSIONREG_ABI";
 
+export const SAFE_APP = "https://main.d3ndrzyvcxhxfj.amplifyapp.com";
 export const WRAPPER_FACTORY_ADDRESS =
   "0x07EbC22196Bd797D7B9a959E21Af674b54b37FE8";
 export const PERMISSIONREG_ADDRESS =
