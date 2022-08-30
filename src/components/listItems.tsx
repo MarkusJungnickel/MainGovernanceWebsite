@@ -33,8 +33,8 @@ import {
   WRAPPER_FACTORY_ADDRESS,
 } from "../constants/constants";
 import { ProviderContext } from "../context/Provider";
+import ContractCall from "./ContractCall/ContractCall";
 import Delegate from "./Delegate";
-import ContractCall from "./GnosisUtils/ContractCall";
 import CheckoutPropose from "./Propose/ContractCallPropose";
 import { switchChain } from "./utils";
 
