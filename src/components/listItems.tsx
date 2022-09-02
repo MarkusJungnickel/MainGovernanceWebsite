@@ -3,6 +3,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import LayersIcon from "@mui/icons-material/Layers";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import PeopleIcon from "@mui/icons-material/People";
+import PieChartIcon from "@mui/icons-material/PieChart";
 import {
   Button,
   Dialog,
@@ -276,13 +277,13 @@ export default function MainListItems() {
         <ListItemIcon>
           <AssignmentIndIcon sx={{ color: "black" }} />
         </ListItemIcon>
-        <ListItemText primary="Delegate Votes" />
+        <ListItemText primary="Delegate Power" />
       </ListItemButton>
       <ListItemButton onClick={handleVotesOpen}>
         <ListItemIcon>
-          <AssignmentIndIcon sx={{ color: "black" }} />
+          <PieChartIcon sx={{ color: "black" }} />
         </ListItemIcon>
-        <ListItemText primary="Votes" />
+        <ListItemText primary="Voting Power" />
       </ListItemButton>
       <Dialog open={openCommittee} onClose={handleCommitteeClose}>
         <Box
