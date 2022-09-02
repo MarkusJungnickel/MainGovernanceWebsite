@@ -1,7 +1,7 @@
 import { TextField } from "@material-ui/core";
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import { isArrayParameter } from "./AbiUtilsPropose";
+import { isArrayParameter, isBoolParameter } from "./AbiUtilsPropose";
 
 export default function ParameterForm(props: any) {
   const [parameters, setParameters] = React.useState<Record<string, any>>({});
@@ -10,10 +10,21 @@ export default function ParameterForm(props: any) {
     console.log(data.target);
     const parameter = data.target.id;
     let parametersTmp = parameters;
+
     if (isArrayParameter(getType(parameter))) {
       parametersTmp[parameter] = [data.target.value];
     } else {
       parametersTmp[parameter] = data.target.value;
+      if (isBoolParameter(getType(parameter))) {
+        if (
+          parametersTmp[parameter] == "1" ||
+          parametersTmp[parameter].toLowerCase() == "true"
+        ) {
+          parametersTmp[parameter] = true;
+        } else {
+          parametersTmp[parameter] = false;
+        }
+      }
     }
     setParameters(parametersTmp);
     console.log(parametersTmp);

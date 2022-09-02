@@ -14,6 +14,10 @@ export interface AbiItemExtended extends AllowedAbiItem {
 export const isArrayParameter = (parameter: string): boolean =>
   /(\[\d*])+$/.test(parameter);
 
+export const isBoolParameter = (parameter: string): boolean => {
+  return parameter == "bool";
+};
+
 export const getMethodSignature = ({ inputs, name }: AbiItem): string => {
   const params = inputs?.map((x) => x.type).join(",");
   return `${name}(${params})`;

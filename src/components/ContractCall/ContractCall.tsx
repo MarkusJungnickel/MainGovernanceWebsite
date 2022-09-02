@@ -63,7 +63,7 @@ export default function Checkout() {
   const createTxObject = (
     method: AbiItemExtended,
     contractAddress: string,
-    values: Record<string, string>
+    values: Record<string, any>
   ): any => {
     console.log("ADDRESS", contractAddress);
     const contract = new web3.eth.Contract([method], contractAddress);
