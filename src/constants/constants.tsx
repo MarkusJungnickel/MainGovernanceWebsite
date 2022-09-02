@@ -22,6 +22,7 @@ export const BRIDGE_PROXY_WRAPPER_FACTORY =
 export const BRIDGE_PROXY_PERMISSION_REG =
   "0x961D1E73F70B1686fbA9eC559eF1dD2Ed62b8a7A";
 // export const TOKEN_ADDRESS = "0x18C20822BA74cB1e54C0EE1EbAaC631eE229A7D1";
+export const BRIDGE_PROXY_MOD = "0x94C92EAa45056c0852375Bad0a3584a8e4Df24B8";
 export const TOKEN_ADDRESS = "0x64d7E09B33EE0aC2A0901E5BEe1D1f877935a6c7";
 export const GNOSIS_SAFE_TREASURY = "";
 export const ROLES = [
@@ -60,7 +61,7 @@ export const CONTRACTS = [
     value: {
       address: MODIFIER_ADDRESS,
       abi: BUDGETMODIFIER_ABI,
-      proxyAddress: BRIDGE_PROXY_WRAPPER_FACTORY,
+      proxyAddress: BRIDGE_PROXY_MOD,
     },
   },
 ];
