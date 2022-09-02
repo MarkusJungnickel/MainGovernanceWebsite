@@ -325,11 +325,14 @@ const ComTile = (props: any) => {
               {props.data.proposer}
             </Typography>
             <Typography align="left" fontFamily="Arial">
+              <b>ID: </b>
+              {props.data.id}
+            </Typography>
+            <Typography align="left" fontFamily="Arial">
               <b>Remaining voting period: </b> {props.data.remainingTime} {"("}
               {props.data.remainingBlocks} blocks
               {")"}
             </Typography>
-
             <Typography align="left" fontFamily="Arial">
               <b>Description: </b>
             </Typography>

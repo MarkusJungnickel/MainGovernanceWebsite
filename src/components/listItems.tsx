@@ -37,6 +37,7 @@ import ContractCall from "./ContractCall/ContractCall";
 import Delegate from "./Delegate";
 import CheckoutPropose from "./Propose/ContractCallPropose";
 import { switchChain } from "./utils";
+import Votes from "./Votes";
 
 export default function MainListItems() {
   // Committee Dialog
@@ -47,6 +48,15 @@ export default function MainListItems() {
   };
   const handleCommitteeClose = () => {
     setCommitteeOpen(false);
+  };
+  // Votes Dialog
+  const [openVotes, setVotesOpen] = React.useState(false);
+  const handleVotesOpen = () => {
+    switchChain(walletProvider, "0x64", "xDai", PROVIDER_XDAI);
+    setVotesOpen(true);
+  };
+  const handleVotesClose = () => {
+    setVotesOpen(false);
   };
 
   // ========= Role Dialog ========
@@ -268,7 +278,12 @@ export default function MainListItems() {
         </ListItemIcon>
         <ListItemText primary="Delegate Votes" />
       </ListItemButton>
-
+      <ListItemButton onClick={handleVotesOpen}>
+        <ListItemIcon>
+          <AssignmentIndIcon sx={{ color: "black" }} />
+        </ListItemIcon>
+        <ListItemText primary="Votes" />
+      </ListItemButton>
       <Dialog open={openCommittee} onClose={handleCommitteeClose}>
         <Box
           component="form"
@@ -415,6 +430,9 @@ export default function MainListItems() {
       </Dialog>
       <Dialog open={openDelegate} onClose={handleDelegateClose}>
         <Delegate handleClose={handleDelegateClose} />
+      </Dialog>
+      <Dialog open={openVotes} onClose={handleVotesClose}>
+        <Votes handleClose={handleVotesClose} />
       </Dialog>
     </React.Fragment>
   );
