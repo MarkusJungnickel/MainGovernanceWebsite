@@ -6,7 +6,7 @@ This repository was created for the purpose of my Master Thesis on Protocol/DAO 
 
 ## Test Website
 
-You can access a deployed version of this website here.
+You can access a deployed version of this website [here](MainGovernanceWebsite/SpringDAO_PPT_Final.pdf)..
 
 ## Setup
 
