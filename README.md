@@ -2,11 +2,11 @@
 
 ## Background
 
-This repository was created for the purpose of my Master Thesis on Protocol/DAO Governance. See a summary of the thesis [here](https://main.druh7epd3cpu6.amplifyapp.com/).
+This repository was created for the purpose of my Master Thesis on Protocol/DAO Governance. See a summary of the thesis [here](./SpringDAO_PPT_Final.pdf).
 
 ## Test Website
 
-You can access a deployed version of this website [here](./SpringDAO_PPT_Final.pdf).
+You can access a deployed version of this website [here](https://main.druh7epd3cpu6.amplifyapp.com/).
 
 ## Setup
 
