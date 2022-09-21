@@ -1,8 +1,16 @@
 # Main Governance Website
 
+## Background
+
+This repository was created for the purpose of my Master Thesis on Protocol/DAO Governance. See a summary of the thesis here.
+
+## Test Website
+
+You can access a deployed version of this website here.
+
 ## Setup
 
-Install the dependencies using yarn – everything else should be ready to go.
+Install the dependencies using yarn. Everything else should be ready to go.
 
 ## Yarn Commands
 
