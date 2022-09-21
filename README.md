@@ -2,7 +2,7 @@
 
 ## Background
 
-This repository was created for the purpose of my Master Thesis on Protocol/DAO Governance. See a summary of the thesis here.
+This repository was created for the purpose of my Master Thesis on Protocol/DAO Governance. See a summary of the thesis [here](https://main.druh7epd3cpu6.amplifyapp.com/).
 
 ## Test Website
 
